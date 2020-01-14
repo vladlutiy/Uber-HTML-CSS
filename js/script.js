@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
         menu.classList.toggle('menu_active');
     });
 
+
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
@@ -15,11 +16,26 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    $('.contacts_link').each(function(i) {
-        $(this).on('click', function(e){
-          e.preventDefault();
-          $('.contacts').eq(i).toggleClass('contacts_plus');
+
+    function toggleSlide(item){
+        $(item).each(function(i) {
+            $(this).on('click', function(e){
+              e.preventDefault();
+              $('.contacts').eq(i).toggleClass('contacts_plus');
+            });
         });
-      });
+    };
     
+    toggleSlide('.contacts_link_bottom');
+    toggleSlide('.contacts_link');
+    toggleSlide('.contacts_close');
+    
+
+    // $(hamburger).each(function() {
+    //     $(this).on('click', function(e){
+    //       e.preventDefault();
+    //       $('.contacts').toggleClass('contacts_ham');
+    //     });
+    // });
+
 });

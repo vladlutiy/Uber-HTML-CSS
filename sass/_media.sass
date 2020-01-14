@@ -32,6 +32,14 @@
                 a 
                     img
                         width: 100%
+    .contacts
+        &_name
+            font-size: 20px
+        &_phone
+            font-size: 20px
+            margin-top: 5px
+        &_number
+            margin-bottom: 10px
 
 
 @media (max-width: 991px)
@@ -93,11 +101,60 @@
             &_sub
                 a 
                     font-size: 8px
+    .contacts
+        &_name
+            font-size: 17px
+        &_phone
+            font-size: 17px
 
 
 @media (max-width: 767px)
     .contacts
         flex-direction: column
+        padding-top: 20px
+        padding-bottom: 10px
+        &_close
+            position: absolute
+            bottom: -100px
+            left: 50%
+            transform: translateX(-50%)
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 40px
+            height: 40px
+            background-color: #000000dc
+            margin: 0 auto
+            border-radius: 100%
+            cursor: pointer
+            &::before
+                content: ''
+                display: block
+                width: 21px
+                height: 2px
+                background-color: #51ff00
+                transition: 0.2s all
+
+            &::after 
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                
+                content: ''
+                display: block
+                height: 21px
+                width: 2px
+                background-color: #51ff00
+                transition: 0.2s all
+        &_number
+            padding: 0 30px
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &_name
+            left: 0
+
     .menu
         position: fixed
         justify-content: center
@@ -213,6 +270,7 @@
                     font-size: 6px
             &_lang
                 margin-top: 10px
+    
 
 
     
