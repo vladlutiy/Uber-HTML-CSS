@@ -12,6 +12,14 @@ window.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
-        })
-    })
-})
+        });
+    });
+
+    $('.contacts_link').each(function(i) {
+        $(this).on('click', function(e){
+          e.preventDefault();
+          $('.contacts').eq(i).toggleClass('contacts_plus');
+        });
+      });
+    
+});

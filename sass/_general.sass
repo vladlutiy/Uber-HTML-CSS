@@ -8,6 +8,27 @@ nav
     background-color: #212121
     z-index: 2
 
+.contacts
+    min-height: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    background-color: rgba(0,0,0,0.93)
+    transition: 0.5s all
+    transform: translateX(0%)
+    &_plus
+        transform: translateX(-100%)
+        
+    &_number
+        color: white
+        margin: 10px 0 20px 0
+    &_name
+        display: block
+        text-align: center
+
+
+
+
 .menu
     display: flex
     justify-content: space-between
@@ -60,7 +81,7 @@ nav
         text-align: right
         line-height: 12px
         margin-top: 8px
-        font-size: 22px
+        font-size: 20px
         font-weight: 400
         text-transform: uppercase
         color: #ffffff
@@ -85,7 +106,7 @@ nav
 
     &_header
         font-weight: 700
-        font-size: 60px
+        font-size: 48px
         text-transform: uppercase
         color: #ffffff
         text-align: center
