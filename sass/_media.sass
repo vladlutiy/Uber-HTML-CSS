@@ -1,8 +1,7 @@
 @media (max-width: 1200px)
     .menu
         &_item
-            // padding-right: 20px
-            padding-right: 35px
+            padding-right: 20px
 
         &_link
             font-size: 13px
@@ -24,14 +23,6 @@
             &_subtitle
                 font-size: 19px
 
-    .footer
-        &_links
-            width: 40%
-        &_mobile
-            &_item
-                a 
-                    img
-                        width: 100%
     .contacts
         &_name
             font-size: 20px
@@ -45,8 +36,7 @@
 @media (max-width: 991px)
     .menu
         &_item
-            // padding-right: 10px 
-            padding-right: 17px
+            padding-right: 10px 
         &_link 
             font-size: 10px
 
@@ -92,15 +82,7 @@
         min-height: auto
 
     .footer
-        &_links
-            &_divider
-                width: 100%
-            &_main
-                a 
-                    font-size: 13px
-            &_sub
-                a 
-                    font-size: 8px
+        width: 520px
     .contacts
         &_name
             font-size: 17px
@@ -115,37 +97,39 @@
         padding-bottom: 10px
         &_close
             position: absolute
-            bottom: -100px
-            left: 50%
+            width: 50px
+            height: 50px
+            margin: 0 auto
+            bottom: -52px
+            right: -20px
             transform: translateX(-50%)
+            border-radius: 100%
+            background-color: rgba(0, 0, 0, 0.80)
             display: flex
             justify-content: center
             align-items: center
-            width: 40px
-            height: 40px
-            background-color: #000000dc
-            margin: 0 auto
-            border-radius: 100%
-            cursor: pointer
+            transition: 0.5s all
             &::before
                 content: ''
                 display: block
-                width: 21px
-                height: 2px
-                background-color: #51ff00
-                transition: 0.2s all
-
-            &::after 
-                position: absolute
-                left: 50%
-                transform: translateX(-50%)
+                width: 33px
+                height: 3px
+                background-color: #ff0000
+                transform: skewY(45deg)
+                transition: 0.5s all
                 
+
+            &::after
                 content: ''
+                position: absolute
+                transform: translateX(20%)
                 display: block
-                height: 21px
-                width: 2px
-                background-color: #51ff00
-                transition: 0.2s all
+                width: 3px
+                height: 33px
+                background-color: #ff0000
+                transform: skewX(-45deg)
+                transition: 0.5s all
+
         &_number
             padding: 0 40px
             width: 100%
@@ -255,21 +239,10 @@
         min-height: 450px
 
     .footer
-        &_social
-            &_item
-                width: 27px
-                height: 27px
+        width: 420px
         &_links
             &_main
-                margin-top: 15px
-                a 
-                    font-size: 9px
-            &_sub
-                margin-top: 10px
-                a 
-                    font-size: 6px
-            &_lang
-                margin-top: 10px
+                margin-top: 25px
     
 
 
@@ -393,34 +366,59 @@
     .car
         .title
             font-size: 19px
-
-    .footer > div
-        &:nth-child(1)
-            order: 2
-        &:nth-child(2)
-            order: 1
-        &:nth-child(3)
-            order: 3
-
+    
     .footer
-        flex-direction: column
+        width: 320px
         &_links
-            width: 75%
+            &_divider
+                width: 200px
+            &_main
+                margin-top: 20px
+                a 
+                    font-size: 13px
+            &_sub
+                a 
+                    font-size: 8px
 
-        &_social
+    .map
+        &_info
+            width: 260px
+            min-height: 130px
+        &_addr
+            font-size: 16px
+        &_phone
+            font-size: 17px
+        &_item
+            img 
+                width: 40px
+    
+    .modal
+        width: 280px
+        min-height: 70px
+        padding: 10px
+        &_subtitle
+            font-size: 15px
+        &_descr
+            font-size: 12px
+        &_close
+            top: auto
+            right: 50%
+            transform: translateX(50%)
+            bottom: -50px
+            // color: red
+        
+    .feed_form
+        input
             width: 100%
-            margin-top: 20px
-            justify-content: center
-            &_item
-                &:nth-child(4)
-                    margin-right: 0
+        &_btn
+            width: 100%
+    
 
-        &_mobile
-            display: none
+
+    
+                
         
     
-        
-            
 
             
 

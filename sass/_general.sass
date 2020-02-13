@@ -8,42 +8,10 @@ nav
     background-color: #212121
     z-index: 2
 
-.contacts
-    min-height: 100%
-    display: flex
-    // flex-direction: column
-    justify-content: space-around
-    align-items: center
-    background-color: rgba(0,0,0,0.93)
-    transition: 0.5s all
-    transform: translateX(-100%)
-    &_plus
-        transform: translateX(0%)
-        display: flex
-    &_number
-        color: white
-        margin: 10px 0 20px 0
-    &_name
-        display: block
-        text-align: center
-        font-size: 24px
-        font-weight: 400
-    &_phone
-        display: block
-        margin-top: 10px
-        color: #ffffff
-        font-size: 30px
-    &_close
-        display: none
-
-
-
-
 .menu
     display: flex
     justify-content: space-between
-    // padding: 13px 70px
-    padding: 13px 100px
+    padding: 13px 70px
     margin: 0
     list-style-type: none
 
@@ -54,8 +22,7 @@ nav
 
     &_item
         border-right: 2px dotted black
-        // padding-right: 28px
-        padding-right: 50px
+        padding-right: 28px
         &:last-child
             border-right: none
             padding-right: 0
@@ -369,93 +336,9 @@ nav
                 &::before
                     content: ''
                     background: url('../icon/red_ok.svg') center (center / cover) no-repeat
-    
 
-.world
-    position: relative
-    min-height: 717px
-    padding: 58px 0 50px 0
-    background: url('../img/down_bg.jpg') center (center / cover) no-repeat
-
-    &_city
-        position: absolute
-        bottom: 49px
-        left: 50%
-        transform: translateX(-50%) 
-
-    &_link
-        font-size: 15px
-        font-weight: 400
-        text-transform: uppercase
-        color: #ffffff //#1fbad6
-        text-decoration: none
-
-.footer
-    padding: 14px 34px 30px 34px
-    position: relative
-    display: flex
-    justify-content: center
-    align-items: center
-   
-   
-    &_social
-        width: 33%
-        display: flex
-        justify-content: flex-start
-        align-items: center
-        margin-right: 20px
-
-        &_item
-            display: flex
-            justify-content: center
-            align-items: center
-            margin-right: 8px
-            border-radius: 100%
-            width: 32px
-            height: 32px
-            background-color: #070716
-            color: #ffffff
-    &_links
-        width: 33%
-        &_divider
-            margin: 0 auto
-            width: 299px
-            height: 4px
-            background-color: #1fbad6
-
-        &_main
-            margin-top: 38px
-            display: flex
-            justify-content: space-between
-            a 
-                font-size: 15px
-                font-weight: 300
-                text-transform: uppercase
-                color: #070716
-        &_sub
-            display: flex
-            justify-content: space-between
-            margin-top: 15px
-            a
-                font-size: 11px
-                font-weight: 300
-                text-transform: uppercase
-                color: #999999
-        &_lang
-            display: flex
-            justify-content: center
-            margin-top: 19px
-            font-size: 11px
-            font-weight: 400
-            text-transform: uppercase
-            color: #1fbad6
-    &_mobile
-        width: 33%
-        &_item
-            margin-left: 20px
-            display: flex
-            justify-content: flex-end
-            align-items: center
 
 .xs-visible
     display: none
+
+

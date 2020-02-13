@@ -21,7 +21,7 @@
                     <li class="menu_item"><a href="#car" class="menu_link">На автомобиле компании</a></li>
                     <li class="menu_item"><a href="#rules" class="menu_link">Требования</a></li>
                     <li class="menu_item"><a href="#" class="menu_link contacts_link">Контакты</a></li>
-                    <!-- <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li> -->
+                    <li class="menu_item"><a href="#" data-modal="consultation" class="menu_link">Оставить заявку</a></li>
                 </ul>
             </div>
             <div class="contacts">
@@ -37,7 +37,7 @@
                         <div class="contacts_name">Сергей</div>
                         <a href="tel:+380677984369" class="contacts_phone">+38 067 798 4369</a>
                     </div>
-                    <div class= "contacts_close"></div>              
+                    <div class="contacts_close"></div>              
             </div>
             <div class="hamburger">
                 <span></span>
@@ -61,9 +61,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <a href="tel:+48574370658" class="xs-visible subheader_phone">+48 574 370 658</a> 
-                        <form action="tel:+48796989735">
-                            <button class="subheader_btn">узнать больше!</button>
-                        </form>
+                        <button data-modal="consultation" class="subheader_btn">Заказать звонок!</button>
                     </div>
                 </div>
                 ≈
@@ -86,9 +84,7 @@
                             Мы одни из партнеров и зарекомендовали себя как лучшая команда в городе Краков.  Водители у нас
                             зарабатывают от 8000 - 12000 злотых в месяц.
                      </div>
-                     <form action="tel:+48574370658">
-                        <button class="promo_btn">Позвонить!</button>
-                     </form>
+                        <button data-modal="consultation" class="promo_btn">Оставить заявку!</button>
                  </div>
             </div>
         </div>
@@ -103,7 +99,7 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_icon">
-                            <img src="/icon/causes_icon/causes11.png" alt="reasons_icon">
+                            <img src="icon/causes_icon/causes11.png" alt="reasons_icon">
                         </div>
 
                         <div class="reasons_dscr">
@@ -121,7 +117,7 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_icon">
-                            <img src="/icon/causes_icon/causes21.png" alt="reasons_icon">
+                            <img src="icon/causes_icon/causes21.png" alt="reasons_icon">
                         </div>
 
                         <div class="reasons_dscr">
@@ -136,7 +132,7 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_icon">
-                            <img src="/icon/causes_icon/causes12.png" alt="reasons_icon">
+                            <img src="icon/causes_icon/causes12.png" alt="reasons_icon">
                         </div>
 
                         <div class="reasons_dscr">
@@ -152,7 +148,7 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_icon">
-                            <img src="/icon/causes_icon/causes22.png" alt="reasons_icon">
+                            <img src="icon/causes_icon/causes22.png" alt="reasons_icon">
                         </div>
 
                         <div class="reasons_dscr">
@@ -170,7 +166,7 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_icon">
-                            <img src="/icon/causes_icon/causes13.png" alt="reasons_icon">
+                            <img src="icon/causes_icon/causes13.png" alt="reasons_icon">
                         </div>
 
                         <div class="reasons_dscr">
@@ -188,7 +184,7 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_icon">
-                            <img src="/icon/causes_icon/causes23.png" alt="reasons_icon">
+                            <img src="icon/causes_icon/causes23.png" alt="reasons_icon">
                         </div>
 
                         <div class="reasons_dscr">
@@ -203,7 +199,7 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_icon">
-                            <img src="/icon/causes_icon/causes14.png" alt="reasons_icon">
+                            <img src="icon/causes_icon/causes14.png" alt="reasons_icon">
                         </div>
 
                         <div class="reasons_dscr">
@@ -218,7 +214,7 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_icon">
-                            <img src="/icon/causes_icon/causes24.png" alt="reasons_icon">
+                            <img src="icon/causes_icon/causes24.png" alt="reasons_icon">
                         </div>
 
                         <div class="reasons_dscr">
@@ -238,43 +234,43 @@
         <div class="container">
             <div class="label">Возможности</div>
             <h2 class="title">мобильное приложение убер</h2>
-            <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</div>
+            <div class="subtitle">Совершите поездку и клиент оплатите ее стоимость, используя свой мобильный телефон</div>
             
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_1">
-                        <div class= "mobile_item_subtitle">оформление заказа одним касанием</div>
-                        <div class= "mobile_item_plus"></div>
+                        <div class= "mobile_item_subtitle">Принятие заказа одним касанием</div>
+                        <div data-modal="consultation" class= "mobile_item_plus"></div >
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_2">
-                        <div class= "mobile_item_subtitle">надежная подача</div>
-                        <div class= "mobile_item_plus"></div>
+                        <div class= "mobile_item_subtitle">надежные клиенты</div>
+                        <div data-modal="consultation" class= "mobile_item_plus"></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_3">
                         <div class= "mobile_item_subtitle">прозрачные цены</div>
-                        <div class= "mobile_item_plus"></div>
+                        <div data-modal="consultation" class= "mobile_item_plus"></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_4">
                         <div class= "mobile_item_subtitle">безналичная оплата</div>
-                        <div class= "mobile_item_plus"></div>
+                        <div data-modal="consultation" class= "mobile_item_plus"></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_5">
                         <div class= "mobile_item_subtitle">обратная связь</div>
-                        <div class= "mobile_item_plus"></div>
+                        <div data-modal="consultation" class= "mobile_item_plus"></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_6">
-                        <div class= "mobile_item_subtitle">разделить стоимость поездки</div>
-                        <div class= "mobile_item_plus"></div>
+                        <div class= "mobile_item_subtitle">выгодные поездки</div>
+                        <div data-modal="consultation" class= "mobile_item_plus"></div>
                     </div>
                 </div>
             </div>
@@ -284,12 +280,9 @@
         <div class="container">
             <div class="label white_lable">Возможности</div>
             <h2 class="title white_title">Выбор - отличная штука!</h2>
-            <div class="subtitle white_title">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
-            <div class="car_img"><img src="/img/car.png" alt="car_img"></div>
-            <div class="car_dscr">
-                Машины на каждый день. <br>
-                Лучше, быстрее и дешевле, чем такси
-            </div>
+            <div class="subtitle white_title">Выбирите автомобиль, который подходит вам по бюджету</div>
+            <div class="car_img"><img src="img/car.png" alt="car_img"></div>
+            <div class="car_dscr">Машины всегда в наличии</div>
         </div>
     </section>
 
@@ -305,9 +298,9 @@
                             <li>Подключаем к системе UBER</li>
                             <li>Ни каких взносов  0%!</li>
                             <li>Можем подключать удаленно без приезда в офис </li>
-                            <li>Заказы распределяются без учета рейтинга ближай- <br> шим водителям</li>
+                            <li>Заказы распределяются без учета рейтинга<br> ближай шим водителям</li>
                             <li>Работа по безналичному или наличному расчету</li>
-                            <li>Деньги перечисляем на карту водителю или наличны- <br> ми в офисе</li>
+                            <li>Деньги перечисляем на карту водителю или <br>наличными в офисе</li>
                         </ul>
                     </div>
                 </div>
@@ -331,8 +324,8 @@
                             <li>Наличие автомобиля без рекламы</li>
                             <li>Автомобиль не должен быть желтый и не с желтыми номерами</li>
                             <li>Машина не старше 2001 года</li>
-                            <li>Стаж вождения не менее 3 лет</li>
-                            <li>Дивайс на системе андроид 4.0и выше</li>
+                            <li>Стаж вождения не менее 1 года</li>
+                            <li>Дивайс на системе ANDROID, IOS или WINDOWS</li>
                         </ul>
                     </div>
                 </div>
@@ -353,29 +346,20 @@
             </div>
         </div>
     </section>
-    <section class="world">
-        <div class="container">
-            <!-- <div class="label white_lable">города</div> -->
-            <h2 class="title white_title">По всему кракову</h2>
-            <div class="subtitle white_title">Мы в Кракове и по всему миру</div>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.4671764047666!2d20.018166080165475!3d50.05881190794775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644e128962651%3A0xbf97de46386500bf!2zTmEgWmHFgsSZY3p1IDEsIDMxLTU4OSBLcmFrw7N3!5e0!3m2!1sru!2spl!4v1579106708846!5m2!1sru!2spl" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        <div class="map_info">
+            <address class="map_addr">Na Załęczu 1, 31-589 Kraków</address>
+            <div class="map_items">
+                <a href="#" class="map_item"><img src="icon/facebook.png" alt="face"></a>
+                <div class="map_phone"><a href="tel:+48574370658">+48 574 370 658</a></div>
+                <a href="#" class="map_item"><img src="icon/instagram.png" alt="inst"></a>
+            </div>
         </div>
     </section>
 
     <section class="footer">
-        <div class="footer_social">
-            <a href="#" class="footer_social_item">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="footer_social_item">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="footer_social_item">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="footer_social_item">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div> 
         <div class="footer_links">
             <div class="footer_links_divider"></div>
             <div class="footer_links_main">
@@ -386,31 +370,40 @@
             <div class="footer_links_sub">
                 <a href="#require">требования</a>
                 <a href="#require">вакансии</a>
-                <a href="#">разработчики</a>
+                <a href="https://github.com/vladlutiy">разработчик</a>
                 <a href="#reasons">блог</a>
                 <a href="#">о нас</a>
             </div>
             <a href="#" class="footer_links_lang">Русский</a>
         </div>
-
-        <div class="footer_mobile">
-            <div class="footer_mobile_item">
-                <a href="#">
-                    <img src="icon/bottom_icon/app_store.png" alt="App Store">
-                </a>
-                <a href="#">
-                    <img src="icon/bottom_icon/google_play.png" alt="Google play">
-                </a>
-                <!-- <a href="#">
-                    <img src="icon/bottom_icon/windows_store.png" alt="Windows store">
-                </a> -->
-            </div>
-        </div>
     </section>
 
-    <section class="bottomline"></section>
-    <script src="js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal_close">&times;</div>
+            <div class="modal_subtitle">Просто заполните форму заявки</div>
+            <div class="modal_descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="feed_form">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+
+                <button class="feed_form_btn">Заказать звонок</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal_close">&times;</div>
+            <div class="modal_subtitle">Спасибо за заявку!</div>
+            <div class="modal_descr">В скором времени мы с Вами свяжемся!</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>    
 </body>
 </html>
 
